@@ -1,15 +1,15 @@
-# QuantiHack 2026: from a cheated trading bot to a solar-storm research paper
+# QuantiHack 2026: from a cheated trading bot to a solar-storm paper
 
 > Team **IMAG** · Imperial College London · March 2026
 
-[QuantiHack](https://quantihack.com/info) was billed as the UK's largest quant event: a week-long online trading competition (22-27 March 2026, **853 players in 232 teams**) followed by an in-person final in London on 28 March. It was sponsored by **Anthropic** (gold), **Jane Street** and **Optiver** (silver).
+[QuantiHack](https://quantihack.com/info) was billed as the UK's largest quant event: a week-long online trading competition (22-27 March 2026, **853 players in 232 teams**) followed by an in-person final in London on 28 March. It was sponsored by **Anthropic**, **Jane Street** and **Optiver**, and drew mainly students from the UK's top universities (Oxbridge, Imperial, etc.).
 
-I took part with **Sara Bazouane** ([@bazouanes-ICL-Ensimag](https://github.com/bazouanes-ICL-Ensimag)), another Ensimag exchange student at Imperial College London in 2025-26. *IMAG is the nickname of Ensimag, our engineering school.* We competed against teams from the best UK universities, Oxford and Cambridge included.
+I took part with **Sara Bazouane** ([@bazouanes-ICL-Ensimag](https://github.com/bazouanes-ICL-Ensimag)), another Ensimag exchange student at Imperial College London in 2025-26. *IMAG is the nickname of Ensimag, our engineering school.* 
 
 **What happened**
 
 - **Qualification (online, 5 days):** each day, the 10 teams with the best PnL qualified for the in-person final. We finished in the top 10 on **3 of the 5 days**, including **3rd place on Day 4** (+$37.7M PnL that day, in simulated dollars, see [Results](#results)), which got us to the final.
-- **Final (in person):** [Encode Hub](https://hub.encodeclub.com/), 41 Pitfield Street, London N1 6DA. We wrote a research paper, *Data Alchemy*, on whether solar geomagnetic activity carries any information about markets. Spoiler: the results were mostly negative.
+- **Final (in person):** [Encode Hub](https://hub.encodeclub.com/), 41 Pitfield Street, London N1 6DA. We wrote a paper, *Data Alchemy*, on whether solar geomagnetic activity carries any information about markets. Spoiler: the results were mostly negative.
 
 This repository is a write-up of our participation, plus the final paper as a PDF. It contains no trading code: the strategy was so simple that the code would have little interest. The whole thing came down to finding the API and refreshing the tokens from the browser dev tools.
 
@@ -21,7 +21,7 @@ This repository is a write-up of our participation, plus the final paper as a PD
 
 ### The setup
 
-Teams traded on a simulated exchange through the organisers' web platform. The platform offered a code editor, assisted by Claude, to write trading bots and launch them on 26 instruments: 8 synthetic stocks (`SYN-*`), 5 FX pairs (`FX-*`), 9 commodities and crypto (`CMD-*`) and 3 indices (`IDX-*`). Each day, teams were ranked by PnL.
+Teams traded on a simulated exchange through the organisers' web platform. The platform offered a code editor, assisted by Claude (it was sponsored by Anthropic...), to write trading bots and launch them on 26 instruments: 8 synthetic stocks (`SYN-*`), 5 FX pairs (`FX-*`), 9 commodities and crypto (`CMD-*`) and 3 indices (`IDX-*`). Each day, teams were ranked by PnL.
 
 ### The problem: a platform under load
 
